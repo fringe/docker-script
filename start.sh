@@ -5,6 +5,9 @@ cd $BASE_PATH/$APP_NAME
 
 source ~/.bashrc
 
+echo '{ "appid": "$APPID", "secret": "$SECRET" }' > yourconfig.json
+agenthub start yourconfig.json
+
 # 如果tnpm不存在，则安装tnpm
 # npm install @tencent/tnpm -g --registry=http://r.tnpm.oa.com --proxy=http://r.tnpm.oa.com:80 --verbose
 
