@@ -12,7 +12,7 @@ npm install
 
 # 启动服务，是否开启调试模式
 if [ $DEBUG ];then
-	/usr/local/bin/node --inspect=0.0.0.0:9229 app.js
+	$EXEC_FILE --inspect=0.0.0.0:9229 app.js
 else
-	/usr/local/bin/node app.js
+	$EXEC_FILE app.js
 fi
