@@ -5,7 +5,7 @@ cd $BASE_PATH/$APP_NAME
 
 source ~/.bashrc
 
-echo '{ "appid": "$APPID", "secret": "$SECRET" }' > yourconfig.json
+echo "{ \"appid\": \"$APPID\", \"secret\": \"$SECRET\" }" > yourconfig.json
 agenthub start yourconfig.json
 
 # 如果tnpm不存在，则安装tnpm
