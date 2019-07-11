@@ -17,7 +17,7 @@ npm install
 
 # 启动服务，是否开启调试模式
 if [ $DEBUG ];then
-	$EXEC_FILE --inspect=0.0.0.0:9229 app.js
+	ENABLE_NODE_LOG=YES $EXEC_FILE --inspect=0.0.0.0:9229 app.js
 else
-	$EXEC_FILE app.js
+	ENABLE_NODE_LOG=YES $EXEC_FILE app.js
 fi
