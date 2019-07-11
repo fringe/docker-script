@@ -3,7 +3,7 @@
 # 切换到工作目录
 cd $BASE_PATH/$APP_NAME
 
-file ~/.bashrc && source ~/.bashrc
+source ~/.bashrc
 
 # 如果tnpm不存在，则安装tnpm
 # npm install @tencent/tnpm -g --registry=http://r.tnpm.oa.com --proxy=http://r.tnpm.oa.com:80 --verbose
