@@ -1,12 +1,14 @@
 #!/bin/bash
 
-# 切换到工作目录
-cd $BASE_PATH/$APP_NAME
-
 source ~/.bashrc
 
 echo "{ \"appid\": \"$APPID\", \"secret\": \"$SECRET\" }" > yourconfig.json
 agenthub start yourconfig.json
+
+# 递归创建工作目录
+# mkdir -p $BASE_PATH/$APP_NAME
+# 切换到工作目录
+cd $BASE_PATH/$APP_NAME
 
 # 如果tnpm不存在，则安装tnpm
 # npm install @tencent/tnpm -g --registry=http://r.tnpm.oa.com --proxy=http://r.tnpm.oa.com:80 --verbose
